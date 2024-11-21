@@ -253,3 +253,12 @@ footer {
 .logo img {
     height: 90px; 
 }
+
+.product-item .image-container {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    top: -15px;
+    left: -15px;
+    margin-right: -30px;
+}
