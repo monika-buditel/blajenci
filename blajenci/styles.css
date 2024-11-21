@@ -37,7 +37,7 @@
 
 
 /* Navbar Styling */
-.navbar ul {
+.navbar nav > ul {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -65,8 +65,8 @@
     position: absolute;
     top: 100%; /* Below the main menu item */
     left: 0;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #131212;
+    border: 1px solid #080808;
     border-radius: 4px;
     min-width: 150px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -97,7 +97,7 @@
         align-items: flex-start;
     }
 
-    .navbar ul {
+    .navbar nav > ul {
         flex-direction: column;
         width: 100%;
     }
@@ -137,7 +137,7 @@ body {
     z-index: 1;
 }
 
-.navbar ul {
+.navbar nav > ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -212,7 +212,7 @@ header, main, footer {
 
 .add-to-cart-btn {
     background-color: #ff9800;
-    color: #fff;
+    color: #000000;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
@@ -301,7 +301,7 @@ footer {
 
 
 @media (max-width: 768px) {
-    .navbar ul {
+    .navbar nav > ul {
         flex-direction: column;
     }
 
@@ -316,4 +316,18 @@ footer {
     .cart-table th, .cart-table td {
         padding: 5px;
     }
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li > ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover > ul {
+    display: block;
+    white-space: nowrap;
 }
