@@ -29,21 +29,22 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 10;
 }
-
 .navbar ul {
     list-style: none;
     display: flex;
-    justify-content: center;
 }
 
 .navbar li {
-    margin: 0 20px;
+    position:relative;
+    text-align: center;
+    right: -500px;
 }
 
 .navbar a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 20px;
     transition: color 0.3s;
 }
 
@@ -78,7 +79,7 @@ header, main, footer {
 }
 
 .product-item img {
-    max-width:100%;
+    max-width:105Г0%;
     border-radius: 5px;
 }
 .product-item h2 {
@@ -241,17 +242,6 @@ footer {
 
 .checkout-btn:hover {
     background-color: #e58900;
-}
-.logo {
-    position: absolute;
-    top: 5px;
-    left: 20px;
-
-  }
-
-
-.logo img {
-    height: 90px; 
 }
 
 .product-item .image-container {
